@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn. com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
+<!-- our css is in the -->
+<style>
+a:link, a:visited {
+  background-color: #FFB6C1;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+
+}
+
+</style>
+
+<!-- link to the javascript -->
+<script type="text/javascript" src="jav.js"></script>
+
+<!-- title label -->
+        <title>I'm Hungry YO!!! </title>
+    </head>
+    
+<body style="background-color:#f5e1da;">
+    
+<!-- bootstrap divisions -->
+    <div class="container mt-5">
+        <div class="jumbotron" style="background-color:#f1f1f1;">
+            <!-- this page is the random page -->
+        <h1 class="display-4"style="color: #085f63;" ></p> <h1 style="font-size:6vw">Your meal of the day is ..... </h1> 
+         </div>
+    </div>
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-md-8" >
+            <div class="card" style="background-color:#f1f1f1;">
+                <div class="card-body">
+                    <!-- food name link with javascript, name is also paired with links -->
+                    <a id="demo" href="http://a.com" style="font-size:3vw" >name</a> 
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" >
+            <div class="card" style="background-color:#f1f1f1;">
+                
+                <!-- button that refresh the page without pressing the arrow on the top left -->
+                <input type="button" value="I don't like this.." onClick="document.location.reload(true)" style="font-size:3vw">
+            </div>
+        </div>
+    </div>
+</div>
+
+<br>
+<br>
+
+
+  <!-- back to menu button -->
+<div class= "container mt-5">
+    <div class="row">
+   <a class"button" href="home.html" align="left"> Menu </a>    
+   </div>
+</div>
+   
+
+  
+   
+
+<script>
+    document.getElementById("demo").href = recipe.links[randnum];
+    document.getElementById("demo").innerHTML = recipe.name[randnum];
+</script>
+        
+     
+     
+     
+        
+</body>
+</html>

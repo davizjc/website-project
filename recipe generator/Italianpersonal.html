@@ -1,0 +1,282 @@
+<html>
+    <!-- image for out icon on the tabs-->  
+    <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/127400/isolated/preview/43ee1cafca2f947f0be0d94aeff0fc26-chef-cartoon-profession-by-vexels.png" type="image/x-icon"/>
+    <head>
+
+    </head>
+    
+<body style="background-color:#f5e1da;">
+   
+   <!-- our css is in the style -->   
+<style>
+      .container {
+  overflow: hidden;
+}
+
+.title {
+    line-height:50px;
+    margin:1px;
+    color: #860F52;
+}
+
+/* Style the filtered elements */
+.filterDiv {
+  float: left;
+  background-color: #FFB6C1;
+  color: white;
+  font-weight:bold;
+  font-size:20px;
+  width: 24.2%;
+  line-height: 50px;
+  text-align: center;
+  margin: 5px;
+  display: none; /* Hidden by default */
+  height:500px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* show light grey background when hover above the buttons */
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn:focus {
+  background-color: #ddd;
+}
+
+/* add a white background for active, WHICH is the SHOW ALL button */
+.btn.active {
+  background-color: black;
+  color: white;
+}
+.btn.active:hover {
+ background-color: #2F4F4F;
+}
+.btn.active:focus {
+  background-color: #2F4F4F;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+/* to decorate the linked sentence, so that it will not show blue hyperlink */
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+</style>  
+
+<script src="personal.js"></script>
+<body style="background-color:#FFD3D9;">
+
+
+<!-- title division -->
+        <div class="fortitle" style="background-color:#f1f1f1;">
+            <h1 class="display-4"style="color: #085f63;"> <h1 style="font-size:6vw">&nbsp;Pick Your Ingredients&nbsp;<img style="max-width:100px; margin-top:15px;" src="italyflag.png"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class"button" href="2personal.html"  style="color: black; font-size:3vw"> Back </a></h1>
+         </div>
+
+<!-- Control buttons -->
+    <!-- the buttons that filters linked from the personal.js -->
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('tomato')"> Tomato</button>
+  <button class="btn" onclick="filterSelection('pork')"> Pork</button>
+  <button class="btn" onclick="filterSelection('pasta')"> Pasta</button>
+  <button class="btn" onclick="filterSelection('bread')"> Bread</button>
+  <button class="btn" onclick="filterSelection('cheese')"> Cheese</button>
+  <button class="btn" onclick="filterSelection('vegatable')"> Vegatable</button>
+  <button class="btn" onclick="filterSelection('beef')"> Beef</button>
+  <button class="btn" onclick="filterSelection('chicken')"> Chicken</button>
+  <button class="btn" onclick="filterSelection('olive')"> Olive</button>
+  <button class="btn" onclick="filterSelection('mushroom')"> Mushroom</button>
+</div>
+
+<!-- The filterable elements. Can filter more than one element -->
+<div class="container" style = 'overflow: hidden;'>
+  
+<br>
+<br>
+<br>
+<br>
+
+<!-- food 1 -->
+    <div class="filterDiv bread vegatable olive tomato"><a href=food0italian.html>
+     <div class= "title">
+        <h1  >Bruschetta</h1>
+        <p  > 4 serves </p> 
+        <hr>
+    </div>
+            <div class="card"  >
+            <img src="https://www.simplyrecipes.com/wp-content/uploads/2014/08/bruschetta-tomato-basil-horiz-a-1600.jpg" width='100%' height=280>
+            </div>
+            </a>
+</div>
+
+
+
+<!-- food 2 -->
+    <div class="filterDiv bread cheese pork olive"><a href=food1italian.html>
+     <div class= "title">
+        <h1  >Focaccia Bread</h1>
+        <p  > 4 serves </p> 
+        <hr>
+</div>
+            <div class="card" >
+            <img src="https://www.handletheheat.com/wp-content/uploads/2014/08/Focaccia-Bread-SQUARE.jpg" width='100%' height=280>
+            </div>
+            </a>
+</div>
+
+
+
+<!-- food 3 -->
+    <div class="filterDiv chicken cheese mushroom"><a href=food2italian.html>
+     <div class= "title">
+        <h1  >Mushroom Risotto</h1>
+        <p  > 4 serves </p> 
+        <hr>
+</div>
+            <div class="card" >
+            <img src="https://www.simplyrecipes.com/wp-content/uploads/2011/04/mushroom-risotto-horiz-b-1800.jpg" width='100%'>
+            </div>
+            </a>
+</div>
+
+
+
+<!-- food 4 -->
+    <div class="filterDiv tomato pasta cheese"><a href=food3italian.html>
+     <div class= "title">
+        <h1  >Pasta Con Pomodoro E Basilico</h1>
+        <p  > 4 serves </p> 
+        <hr>
+</div>
+            <div class="card" >
+            <img src="https://www.wikihow.com/images/1/10/Make-Spaghetti-al-Pomodoro-e-Basilico-Intro.jpg" width='100%'>
+            </div>
+            </a>
+</div>
+  
+  
+  
+  <!-- food 5 -->
+      <div class="filterDiv tomato pasta cheese"><a href=food4italian.html>
+     <div class= "title">
+        <h1  >Stamp-of-Approval Spaghetti Sauce</h1>
+        <p  > 4 serves </p> 
+        <hr>
+</div>
+            <div class="card" >
+            <img src="https://thumbor.thedailymeal.com/t8XQhCJxynmGAGndUrj1XD8kOJU=/870x565/https://www.thedailymeal.com/sites/default/files/2014/12/15/e23fc84b6b709935307304ae46b9217e.jpg" width='100%'>
+            </div>
+            </a>
+</div>
+
+
+ 
+ <!-- food 6 --> 
+  <div class="filterDiv tomato vegatable cheese"><a href=food5italian.html>
+     <div class= "title">
+        <h1  > Caprese Salad with Pesto Sauce</h1>
+        <p  > 4 serves </p> 
+        <hr>
+</div>
+            <div class="card" >
+            <img src="https://cms.splendidtable.org/sites/default/files/styles/w2000/public/174228975.jpg?itok=9UwvV49U.jpg" width='100%'>
+            </div>
+            </a>
+</div>
+   
+   
+  
+  <!-- food 7 --> 
+  <div class="filterDiv bread vegatable olive"><a href=food6italian.html>
+  <div class= "title">
+        <h1  > Panzenella</h1>
+        <p  > 4 serves </p> 
+        <hr>
+</div>
+            <div class="card" >
+            <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2011/8/4/2/IG0509_panzanella_s4x3.jpg.rend.hgtvcom.826.620.suffix/1529943365287.jpeg" width='100%'>
+            </div>
+            </a>
+  </div>
+  
+  
+  
+<!-- food 8 -->
+  <div class="filterDiv pasta pork egg "><a href=food7italian.html>
+     <div class= "title">
+        <h1  > Pasta Carbonara</h1>
+        <p  > 4 serves </p>
+        <hr>
+</div>
+            <div class="card" >
+                <img src="https://static01.nyt.com/images/2018/08/10/dining/carbonara-horizontal/carbonara-horizontal-articleLarge.jpg"width='100%'>
+            </div>
+            </a>
+  </div>
+  
+  
+ 
+  
+  
+  
+ <!-- food 9 --> 
+  <div class="filterDiv bread cheese pork beef chicken olive"><a href=food8italian.html>
+     <div class= "title">
+        <h1  > Margherita Pizza</h1>
+        <p  > 2 serves </p> 
+        <hr>
+</div>
+            <div class="card" >
+                <img src="https://img.taste.com.au/Wf8mL7LT/w720-h480-cfill-q80/taste/2016/11/jessica-39581-2.jpeg" width='100%'>
+            </div>
+            </a>
+  </div>
+  
+  
+ <!-- food 10 --> 
+  <div class="filterDiv pasta cheese beef pork chicken tomato"><a href=food9italian.html>
+     <div class= "title">
+        <h1  > Lasagna</h1>
+        <p  > 4 serves </p> 
+        <hr>
+</div>
+            <div class="card" >
+             <img src="https://www.johnsonville.com/.imaging/mte/johnsonville-retail/640-wide/dam/johnsonville/recipe-images/italian-sausage-lasagna/jcr:content/italian-sausage-lasagna.jpg" width='100%'>
+            </div>
+            </a>
+    </div>
+    
+    
+  
+</div>
+    </body>
+</html>

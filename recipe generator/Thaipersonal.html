@@ -1,0 +1,280 @@
+<html>
+    <!-- image for out icon on the tabs-->  
+    <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/127400/isolated/preview/43ee1cafca2f947f0be0d94aeff0fc26-chef-cartoon-profession-by-vexels.png" type="image/x-icon"/>
+    <head>
+
+    </head>
+    
+<body style="background-color:#f5e1da;">
+   
+   <!-- our css is in the style -->   
+<style>
+      .container {
+  overflow: hidden;
+}
+
+.title {
+    line-height:50px;
+    margin:1px;
+    color: #860F52;
+}
+
+/* Style the filtered elements */
+.filterDiv {
+  float: left;
+  background-color: #FFB6C1;
+  color: white;
+  font-weight:bold;
+  font-size:20px;
+  width: 24.2%;
+  line-height: 50px;
+  text-align: center;
+  margin: 5px;
+  display: none; /* Hidden by default */
+  height:520px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* show light grey background when hover above the buttons */
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn:focus {
+  background-color: #ddd;
+}
+
+/* add a white background for active, WHICH is the SHOW ALL button */
+.btn.active {
+  background-color: black;
+  color: white;
+}
+.btn.active:hover {
+ background-color: #2F4F4F;
+}
+.btn.active:focus {
+  background-color: #2F4F4F;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+/* to decorate the linked sentence, so that it will not show blue hyperlink */
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+</style>  
+       
+
+<script src="personal.js"></script>
+<body style="background-color:#FFD3D9;">
+
+<!-- title division -->
+        <div class="fortitle" style="background-color:#f1f1f1;">
+            <h1 class="display-4"style="color: #085f63;"> <h1 style="font-size:6vw"> &nbsp;Pick Your Ingredients&nbsp;<img style="max-width:100px; " src="thaiflag.jpg"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a class"button" href="2personal.html"  style="color: black; font-size:3vw"> Back </a></h1>
+         </div>
+
+ <!-- the buttons that filters linked from the personal.js --> 
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('soup')"> Soup</button>
+  <button class="btn" onclick="filterSelection('beef')"> Beef</button>
+  <button class="btn" onclick="filterSelection('pork')"> Pork</button>
+  <button class="btn" onclick="filterSelection('seafood')"> Seafood</button>
+  <button class="btn" onclick="filterSelection('chicken')"> Chicken</button>  
+    <button class="btn" onclick="filterSelection('egg')"> Egg</button>  
+    <button class="btn" onclick="filterSelection('rice')"> Rice</button>  
+    <button class="btn" onclick="filterSelection('vegatable')"> Vegatable</button>  
+</div>
+
+<!-- The filterable elements. Can filter more than one element -->
+<div class="container" style = 'overflow: hidden;'>
+  
+<br>
+<br>
+<br>
+<br>  
+  
+
+<!-- food 1 -->  
+  <div class="filterDiv seafood soup "><a href=food0thai.html>
+     <div class= "title">
+        <h1  > Tom Yum Goong</h1>
+        <p  > 4 serves </p> 
+<hr>
+</div>
+            <div class="card" >
+            <img style='margin-top:10px;width:100%;' src="https://asianinspirations.com.au/wp-content/uploads/2018/07/R00067_Tom-Yum-Goong.jpg">
+            </div>
+            </a>
+</div>
+   
+   
+<!-- food 2 -->   
+  <div class="filterDiv beef soup pork"><a href=food1thai.html>
+   
+  <div class= "title">
+        <h1  > Soup Nuea(Beef Soup)</h1>
+        <p  > 4 serves </p> 
+<hr>
+</div>
+            <div class="card" >
+            <img src='https://hot-thai-kitchen.com/wp-content/uploads/2015/10/Beef-stew-sm.jpg' style='width:100%;margin-top:10px;'>
+            </div>
+            </a>
+  </div>
+  
+  
+  <!-- food 3 -->
+  <div class="filterDiv pork"><a href=food2thai.html>
+     
+     <div class= "title">
+        <h1  > Moo Satay </h1>
+        <p  > 4 serves </p> 
+<hr>
+</div>
+            <div class="card" >
+            <img src="https://importfood.com/images/com_yoorecipe/21/cropped-pork_satay_5l.jpg" width='100%'>
+            </div>
+            </a>
+  </div>
+  
+  
+ 
+  
+  
+  
+<!-- food 4 -->  
+  <div class="filterDiv chicken"><a href=food3thai.html>
+     <div class= "title">
+        <h1  > Gai Yang(Grilled Chicken)</h1>
+        <p  > 5 serves </p> 
+<hr>        
+</div>
+            <div class="card" >
+             <img src='https://learntobbq.com/wp-content/uploads/2018/03/peak-gai-yang-chicken-wings-880.png' style='width:100%; margin-top:10px;'>
+            </div>
+            </a>
+  </div>
+  
+  
+  
+ <!-- food 5 --> 
+  <div class="filterDiv chicken"><a href=food4thai.html>
+     <div class= "title">
+        <h1  > Gai Tod(Fried Chicken)</h1>
+        <p  > 4 serves </p> 
+<hr>
+</div>
+            <div class="card" >
+             <img src="http://rachelcooksthai.com/wp-content/uploads/2011/05/fried-chicken-scene-large1.jpg" width='100%'>
+            </div>
+            </a>
+    </div>
+    
+    
+    
+<!-- food 6 -->
+      <div class="filterDiv pork rice"><a href=food5thai.html>
+     <div class= "title">
+        <h1  >Khao Moo Daeng (Red Pork with Red Sauce)</h1>
+        <p  > 6 serves </p> 
+<hr>        
+</div>
+            <div class="card" >
+             <img src="https://previews.123rf.com/images/bigjom/bigjom1805/bigjom180500115/100781440-rice-with-roasted-red-pork-with-egg-and-cucumber-khao-moo-daeng-.jpg" width='100%'>
+            </div>
+            </a>
+    </div>
+    
+    
+<!-- food 7 -->
+    <div class="filterDiv beef pork spicy"><a href=food6thai.html> 
+     <div class= "title">
+        <h1  >Nam Tok Moo (Grilled Pork with Spice)</h1>
+        <p  > 4 serves </p> 
+<hr>
+</div>
+            <div class="card" >
+             <img src="https://i.ytimg.com/vi/_6RP0BjJqM4/maxresdefault.jpg" width='100%'>
+            </div>
+            </a>
+    </div>
+    
+    
+    
+    
+  
+<!-- food 8 -->
+    <div class="filterDiv pork beef"><a href=food7thai.html>
+     <div class= "title">
+        <h1  >Larb Moo (Minced Pork Salad)</h1>
+        <p  > 1-2 serves </p> 
+<hr>
+</div>
+            <div class="card" >
+             <img src= "https://www.templeofthai.com/images/recipes/laab-moo-salad.jpg" width='100%'>
+            </div>
+            </a>
+    </div>
+    
+    
+<!-- food 9 -->
+    <div class="filterDiv seafood vegatable"><a href=food8thai.html> 
+     <div class= "title">
+        <h1  >Yum Talay (Seafood Salad)</h1>
+        <p  > 4 serves </p> 
+<hr>
+</div>
+            <div class="card" >
+             <img src="http://1.bp.blogspot.com/_zxq3CneaXaA/S-FS9Ul0WLI/AAAAAAAAAKk/6lJdZgX9Gxg/s1600/spicy+seafood+salad.jpg" width='100%'>
+            </div>
+            </a>
+    </div>
+    
+    
+<!-- food 10 -->    
+    <div class="filterDiv seafood egg"><a href=food9thai.html> 
+     <div class= "title">
+        <h1 > Tod Man Goong (Shrimp Cake)</h1>
+        <p > 20-24 pieces serves </p> 
+<hr>
+</div>
+            <div class="card" >
+             <img src="https://highheelgourmet.files.wordpress.com/2015/04/authentic-shrimp-cake-tod-mun-goong-by-the-high-heel-gourmet-5-1.jpg" width='100%'>
+            </div>
+            </a>
+
+    </div>
+    
+    
+</div>
+    </body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/127400/isolated/preview/43ee1cafca2f947f0be0d94aeff0fc26-chef-cartoon-profession-by-vexels.png" type="image/x-icon"/>
+    <head>
+
+    </head>
+    
+    <body>
+<meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale1.0">
+    <meta http-equiv="X-UA-Compatible"
+    content="ie=edge">
+    
+      <style>
+      .container {
+  overflow: hidden;
+}
+.title {
+    line-height:50px;
+    margin:2px;
+}
+
+.filterDiv {
+  float: left;
+  background-color: #E6902E;
+  color: white;
+  font-weight:bold;
+  font-size:20px;
+  width: 32.5%;
+  line-height: 80px;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+  height:700px;
+  
+  
+}
+
+.card{
+    background-color: #FF8900
+    height:300px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* Add a light grey background on mouse-over */
+.btn:focus {
+  background-color: #ddd;
+}
+
+
+
+/* Add a dark background to the active button */
+.btn.active {
+  background-color: #111;
+  color: white;
+}
+
+
+h1 {
+  font-weight: bold;
+
+}
+
+a:link {
+  text-decoration: none;
+  color:white;
+}
+
+a:visited {
+  text-decoration: none;
+  color:white;
+    
+}
+
+a:hover {
+  text-decoration: none;
+  color:white;
+    
+}
+
+a:active {
+  text-decoration: none;
+  color:white;
+    
+}
+
+</style>  
+       
+
+<script src="personal.js"></script>
+<body style="background-color:#FFFFE0;">
+
+
+    <div class="container mt-5">
+        <div class="jumbotron" style="background-color:#f1f1f1;">
+            <h1 class="display-4"style="color: #085f63;" ></p> <h1 style="font-size:6vw">Pick Your Ingredients</h1>
+         </div>
+    </div>
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('beef')"> Beef</button>
+  <button class="btn" onclick="filterSelection('pork')"> Pork</button>
+  <button class="btn" onclick="filterSelection('cheese')"> Cheese</button>
+  <button class="btn" onclick="filterSelection('bread')"> Bread</button>
+  <button class="btn" onclick="filterSelection('seafood')"> Seafood</button>
+  <button class="btn" onclick="filterSelection('vegatable')"> Vegatable</button>
+  <button class="btn" onclick="filterSelection('tomato')"> Tomato</button>  
+    <button class="btn" onclick="filterSelection('egg')"> Egg</button>  
+</div>
+
+<!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+<div class="container" style = 'overflow: hidden;'>
+   <div class="wrapper">
+  
+  <div class="filterDiv beef bread egg">
+     <div class= "title">
+                <a href=food0american.html>
+        <h1> Best Beef Burger</h1>
+<hr>
+        <p>4 serves </p>
+        
+</div>
+
+<div class="container mt-5">
+        <div class="col-md-4" >
+            <div class="card" style="background-color:#f5e1da;">
+                    <h3 class="card-title" style="color: #FF8900;"> </h3>
+            <img style='margin-top:10px;style='width:105%';' src=bbb.jpg>
+            </a>
+            </div>
+        </div>
+    </div>
+</div>
+   
+   
+   
+  <div class="filterDiv beef cheese tomato"><a href=food1american.html>
+
+  <div class= "title">
+        <h1> Beef and Cheddar Casserole</h1>
+        <hr>
+        <p> 4 serves </p> 
+</div>
+
+<div class="container mt-5">
+        <div class="col-md-4" >
+            <div class="card" style="background-color:#f5e1da;">
+                    <h3 class="card-title" style="color: #FF8900;"> </h3>
+            <img src='https://www.budgetsavvydiva.com/wp-content/uploads/2013/12/Beefy-Macaroni-and-Cheese3.jpg' style='width:105%;margin-top:10px;'>
+            </div>
+            </a>
+        </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="filterDiv pork bread cheese vegatable tomato"><a href=food2american.html>
+     <div class= "title">
+        <h1> Pork Chops Stuffed with Sun-Dried Tomatoes and Spinach</h1>
+       
+        <p> 4 serves </p> 
+</div>
+
+<div class="container mt-5">
+        <div class="col-md-4" >
+            <div class="card" style="background-color:#f5e1da;">
+                    <h3 class="card-title" style="color: #FF8900;"> </h3>
+            <img src="https://keeprecipes.com/sites/keeprecipes/files/194182_1420169561_0.jpg" width='105%'>
+            </div>
+            </a>
+        </div>
+    </div>
+  </div>
+  
+  
+ 
+  
+  
+  
+  
+  <div class="filterDiv seafood vegatable egg"><a href=food3american.html>
+     <div class= "title">
+        <h1  > Crab Cake</h1>
+       
+        <p  > 10 serves </p> 
+</div>
+
+<div class="container mt-5">
+        <div class="col-md-4" >
+            <div class="card" style="background-color:#f5e1da;">
+                    <h3 class="card-title" style="color: #FF8900;"> </h3>
+             <img src='https://thecozyapron.com/wp-content/uploads/2018/06/crab-cakes_thecozyapron_1.jpg' style='width:105%; margin-top:10px;'>
+            </div>
+            </a>
+        </div>
+    </div>
+  </div>
+  
+  
+  
+  <div class="filterDiv seafood tomato"><a href=food4american.html>
+     <div class= "title">
+        <h1  > Tuna Tartare</h1>
+       
+        <p  > 4 serves </p> 
+</div>
+
+<div class="container mt-5">
+        <div class="col-md-4" >
+            <div class="card" style="background-color:#f5e1da;">
+                    <h3 class="card-title" style="color: #FF8900;"> </h3>
+             <img src="http://www.themeaningofpie.com/wp-content/uploads/2011/01/tuna-tartare-lead.jpg" width='105%'>
+            </div>
+            </a>
+        </div>
+    </div>
+    </div>
+    
+    
+    
+    
+      <div class="filterDiv beef cheese"><a href=food5american.html>
+     <div class= "title">
+        <h1  >Midwest Meatball Casserole</h1>
+       
+        <p  > 6 serves </p> 
+</div>
+
+<div class="container mt-5">
+        <div class="col-md-4" >
+            <div class="card" style="background-color:#f5e1da;">
+                    <h3 class="card-title" style="color: #FF8900;"> </h3>
+             <img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fcdn-image.myrecipes.com%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmedium_2x%2Fpublic%2Fimage%2Frecipes%2Fgbp%2Fmeatball-sub-casserole-gb-x.jpg%3Fitok%3DE2Z02Vrw&w=450&c=sc&poi=face&q=85" width='105%'>
+            </div>
+            </a>
+        </div>
+    </div>
+    </div>
+    
+    
+    
+    <div class="filterDiv chicken cheese egg"><a href=food6american.html>
+     <div class= "title">
+        <h1  >Creamy Mac-and-Cheese Chicken Soup</h1>
+       
+        <p  > 8 serves </p> 
+</div>
+
+<div class="container mt-5">
+        <div class="col-md-4" >
+            <div class="card" style="background-color:#f5e1da;">
+                    <h3 class="card-title" style="color:f #FF8900;"> </h3>
+             <img src="http://laughingcolours.joosdigital.in/wp-content/uploads/2018/02/55-2.jpg" width='105%'>
+            </div>
+            </a>
+        </div>
+    </div>
+    </div>
+    
+    
+    
+        <div class="filterDiv pork vegatable"><a href=food7american.html>
+     <div class= "title">
+        <h1  >Creamy Potato Salad With Bacon</h1>
+       
+        <p  > 4 serves </p> 
+</div>
+
+<div class="container mt-5">
+        <div class="col-md-4" >
+            <div class="card" style="background-color:#f5e1da;">
+                    <h3 class="card-title" style="color: #FF8900;"> </h3>
+             <img src="http://aucdn.ar-cdn.com/recipes/originals/9f161080-fb82-450c-bac6-170481d56ed8.jpg" width='105%'>
+            </div>
+            </a>
+        </div>
+    </div>
+    </div>
+    
+    
+  
+  
+  
+    <div class="filterDiv pork"><a href=food8american.html>
+
+     <div class= "title">
+        <h1  >Southern-Fried Pork Chops</h1>
+       
+        <p  > 4 serves </p> 
+</div>
+
+<div class="container mt-5">
+        <div class="col-md-4" >
+            <div class="card" style="background-color:#f5e1da;">
+                    <h3 class="card-title" style="color: #FF8900;"> </h3>
+             <img src="https://www.tasteofthesouthmagazine.com/wp-content/uploads/2017/09/Southern-Fried-Pork-Chops-e1506454925290.jpg" width='105%'>
+            </div>
+            </a>
+        </div>
+    </div>
+    </div>
+    
+    
+    
+    
+        <div class="filterDiv pork cheese tomato egg"><a href=food9american.html>
+     <div class= "title">
+        <h1  >BLT Egg Bake</h1>
+       
+        <p  > 4 serves </p> 
+</div>
+
+<div class="container mt-5">
+        <div class="col-md-4" >
+            <div class="card" style="background-color:#f5e1da;">
+                    <h3 class="card-title" style="color: #FF8900;"> </h3>
+             <img src="https://www.tasteofhome.com/wp-content/uploads/2018/01/BLT-Egg-Bake_EXPS_MRMZ16_14578_B09_09_1b-3.jpg" width='105%'>
+            </div>
+            </a>
+        </div>
+    </div>
+    </div>
+    
+    </div>
+</div>
+
+
+
+    </body>
+</html>

@@ -1,0 +1,285 @@
+<html>
+    <!-- image for out icon on the tabs-->  
+    <link rel="shortcut icon" href="https://images.vexels.com/media/users/3/127400/isolated/preview/43ee1cafca2f947f0be0d94aeff0fc26-chef-cartoon-profession-by-vexels.png" type="image/x-icon"/>
+    <head>
+
+    </head>
+    
+<body style="background-color:#f5e1da;">
+   
+   <!-- our css is in the style -->   
+<style>
+      .container {
+  overflow: hidden;
+}
+
+.title {
+    line-height:50px;
+    margin:1px;
+    color: #860F52;
+}
+
+/* Style the filtered elements */
+.filterDiv {
+  float: left;
+  background-color: #FFB6C1;
+  color: white;
+  font-weight:bold;
+  font-size:20px;
+  width: 24.2%;
+  line-height: 50px;
+  text-align: center;
+  margin: 5px;
+  display: none; /* Hidden by default */
+  height:590px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 15px 20px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/* show light grey background when hover above the buttons */
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn:focus {
+  background-color: #ddd;
+}
+
+/* add a white background for active, WHICH is the SHOW ALL button */
+.btn.active {
+  background-color: black;
+  color: white;
+}
+.btn.active:hover {
+ background-color: #2F4F4F;
+}
+.btn.active:focus {
+  background-color: #2F4F4F;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+/* to decorate the linked sentence, so that it will not show blue hyperlink */
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+</style>  
+       
+       
+
+<script src="personal.js"></script>
+<body style="background-color:#FFD3D9;">
+
+
+<!-- title division -->
+        <div class="fortitle" style="background-color:#f1f1f1;">
+            <h1 class="display-4"style="color: #085f63;"> <h1 style="font-size:6vw">&nbsp;Pick Your Ingredients&nbsp;<img style="max-width:100px; margin-top:15px;" src="japanflag.png"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class"button" href="2personal.html"  style="color: black; font-size:3vw"> Back </a></h1>
+         </div>
+
+     
+    
+      <!-- the buttons that filters linked from the personal.js -->  
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('rice')"> Rice</button>
+  <button class="btn" onclick="filterSelection('egg')"> Egg</button>
+  <button class="btn" onclick="filterSelection('curry')"> Curry</button>
+  <button class="btn" onclick="filterSelection('noodle')"> Noodle</button>
+  <button class="btn" onclick="filterSelection('pork')"> Pork</button>
+  <button class="btn" onclick="filterSelection('beef')"> Beef</button>
+  <button class="btn" onclick="filterSelection('chicken')"> Chicken</button>  
+  <button class="btn" onclick="filterSelection('mushroom')"> Mushroom</button> 
+  <button class="btn" onclick="filterSelection('spicy')"> Spicy</button> 
+ 
+</div>
+  
+<!-- The filterable elements. Can filter more than one element -->
+<div class="container" style = 'overflow: hidden;'>
+  
+ 
+<br>
+<br>
+<br>
+<br>
+
+<!-- food 1 -->
+  <div class="filterDiv rice mushroom egg"><a href=food0japanese.html>
+     <div class= "title">
+        <h1  > Omurice</h1>
+        <p  > 2 serves </p> 
+    </div>
+<hr>
+    <div class="card" >
+        <img style='margin-top:10px;width:100%;' src="https://static01.nyt.com/images/2018/07/24/dining/HK-omurice-horizontal/merlin_141075450_0113642e-e841-4dd6-b96f-742a29fdef10-articleLarge.jpg">
+    </div>
+            </a>
+</div>
+
+
+   
+<!-- food 2 -->   
+  <div class="filterDiv curry rice beef pork chicken"><a href=food1japanese.html> 
+  <div class= "title">
+        <h1  > Japanese Curry</h1>
+        <p  > 4 serves </p> 
+    </div>
+<hr>
+    <div class="card" >
+        <img src='https://www.justonecookbook.com/wp-content/uploads/2013/03/Simple-Chicken-Curry.jpg' style='width:100%;margin-top:10px;'>
+    </div>
+            </a>
+  </div>
+  
+  
+  
+<!-- food 3 -->  
+  <div class="filterDiv noodle egg"><a href=food2japanese.html> 
+     <div class= "title">
+        <h1  > Miso Ramen</h1>
+        <p  > 2 serves </p> 
+    </div>
+<hr>
+        <div class="card" >
+            <img src="https://img.delicious.com.au/OqmFaoLj/w759-h506-cfill/del/2017/07/japanese-spicy-miso-pork-ramen-49051-1.jpg" width='100%'>
+        </div>
+            </a>
+  </div>
+  
+
+  
+<!-- food 4 -->
+  <div class="filterDiv noodle"><a href=food3japanese.html>
+     <div class= "title">
+        <h1  > Yaki Udon</h1>
+        <p  > 1 serves </p> 
+    </div>
+<hr>
+        <div class="card" >
+            <img src='https://www.justonecookbook.com/wp-content/uploads/2011/01/Yaki-Udon1-500x400.jpg' style='width:100%; margin-top:10px;'>
+        </div>
+            </a>
+  </div>
+  
+  
+<!-- food 5 -->  
+  <div class="filterDiv rice "><a href=food4japanese.html>
+     <div class= "title">
+        <h1  > Japanese Fried Rice</h1>
+        <p  > 4 serves </p> 
+    </div>
+<hr>
+        <div class="card" >
+            <img src="http://www.bearnakedfood.com/wp-content/uploads/2017/05/DSCF6018-2.jpg" width='100%'>
+        </div>
+            </a>
+    </div>
+    
+    
+    
+<!-- food 6 -->    
+    <div class="filterDiv chicken"><a href=food5japanese.html>
+        <div class= "title">
+        <h1>Baked Chicken Katsu</h1>
+         <p> 2 serves </p> 
+    </div>
+<hr>
+        <div class="card" >
+             <img src="https://static1.squarespace.com/static/556feb06e4b02d3071c7736e/t/59d1b9386f4ca3b20878a9fa/1506916709003/shutterstock_560026189.jpg" width='100%'>
+        </div>
+            </a>
+    </div>
+    
+<!-- food 7 -->    
+        <div class="filterDiv egg"><a href=food7japanese.html>
+     <div class= "title">
+        <h1  >Dashi Tamagoyaki</h1>
+        <p  > 1 serves </p> 
+    </div>
+<hr>
+    <div class="card" >
+        <img src="https://img-global.cpcdn.com/001_recipes/2455553_4d31470d85d2f936/751x532cq70/japanese-rolled-omelette-dashimaki-tamago-recipe-main-photo.jpg" width='100%'>
+    </div>
+            </a>
+    </div>
+    
+    
+  
+  
+<!-- food 8 -->  
+    <div class="filterDiv egg mushroom"><a href=food8japanese.html>
+     <div class= "title">
+        <h1  >Chawan Mushi</h1>
+        <p  > 4 serves </p> 
+</div>
+<hr>
+        <div class="card" >
+             <img src="https://www.justonecookbook.com/wp-content/uploads/2019/01/Instant-Pot-Chawanmushi-I.jpg" width='100%'>
+        </div>
+            </a>
+    </div>
+    
+  
+  
+<!-- food 9 -->  
+      <div class="filterDiv noodle spicy"><a href=food6japanese.html>
+     <div class= "title">
+        <h1  >Spicy Miso Tsukemen</h1>
+        <p  > 2 serves </p> 
+</div>
+<hr>
+            <div class="card" >
+             <img src="https://s3-media4.fl.yelpcdn.com/bphoto/GJ1dg5je6wMBrlR9Xb-trQ/o.jpg" width='100%'>
+            </div>
+            </a>
+    </div>
+    
+    
+    
+    
+<!-- food 10 -->    
+    <div class="filterDiv beef rice"><a href=food9japanese.html>
+    <div class= "title">
+        <h1  >Hayashi Ground Beef</h1>
+        <p  > 2 serves </p> 
+    </div>
+<hr>
+            <div class="card" >
+             <img src="https://www.japanesecooking101.com/wp-content/uploads/2015/01/IMG_8619.jpg" width='100%'>
+            </div>
+            </a>
+</div>
+    
+
+
+
+
+</div>
+    </body>
+</html>
